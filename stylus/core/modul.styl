@@ -1,0 +1,420 @@
+@font-face 
+    font-family: 'gottam-book';
+    src: url('../fonts/gottam_book.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+@import "nib"
+@import "nib/vendor"
+//Helpers
+.btn-large
+    width: 250px
+.block-Button
+    font-weight: bold;
+    padding: .5em 1.5em;
+    background: #002856;
+    border-radius: 1em;
+    border: 0
+    color: white
+
+body
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px
+    color: #4c4b36
+.wrap-principal
+    max-width: 1200px;
+    margin: 0 auto;
+.header
+    color: #4c4b36;
+    background: #dacda7;
+    &-Container
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        padding: 1em 0;
+        max-width: 1000px !important;
+        .menu
+            display: flex;
+            width: 100%;
+            position: relative;
+            justify-content: center;
+            .img
+                position: absolute;
+                left: 0;
+            ul
+                display: flex;
+                justify-content: center;
+                width: 100%;
+                list-style: none;
+                margin: 0;
+                li
+                    padding: .5em 0;
+                    font-weight: bold;
+                    max-width: 160px;
+                    width: 100%;
+                    text-align: center
+        &-Block
+            width: 25%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            .block-Button
+                font-weight: bold;
+                padding: .5em 1.5em;
+                background: #002856;
+                border-radius: 1em;
+            &:first-child
+                color: white;
+            &:nth-child(2)
+                width: 50%;
+            .logo
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+                .balls
+                    margin: 0 .7em;
+                .title
+                    font-size: 1.5em;
+                    font-family: BritishCouncil-bold;
+            .lang
+                font-weight: bold;
+                a
+                    &:first-child
+                        border-right: 1px solid;
+                        padding-right: .3em;
+.normalc
+    max-width: 1000px
+    margin: 0 auto;
+.twocol
+    display: flex
+    padding: 3em 0;
+    justify-content: space-between;
+    .col
+        h4
+        h2
+            margin: 0
+        h4
+            font-weight: lighter
+        &:first-child
+            width: 30%;
+        &:last-child
+            width: 60%;
+            padding-right: 10em;
+            text-align: left;
+            .parr
+                font-size: 12px;
+                float: right;
+                margin: 1em 0;
+
+.mainBack
+    background: #4c4b36;
+    &-ImgContainer
+        position: relative
+        .newsect
+            text-align: center;
+            color: white;
+            font-size: 3em;
+            position: absolute;
+            z-index: 2;
+            bottom: 0;
+            width: 100%;
+            i
+                color: #b83c1a;
+        .containerx
+            position: relative;
+            display: flex;
+            height: 710px;
+            overflow: hidden;
+            .imgback
+                position: absolute;
+                top: 0;
+                right: 0;
+                width: 60%;
+            .content
+                width: 100%;
+                position: relative;
+                max-width: 1000px;
+                margin: 0 auto;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                color: white;
+                h1
+                    margin: 0;
+                    font-size: 3em;
+                    font-weight: 100;
+                p
+                    font-family: 'gottam-book';
+
+.regularM
+    font-family: 'Montserrat', sans-serif !important
+    font-weight: normal !important
+.mainMenu
+    background: #e51a35;
+    position: relative;
+    z-index: 2;
+    &-Container
+        &-Wrap
+            display: flex;
+            justify-content: space-around;
+            padding: 2.5em 0 1em;
+            align-items: flex-start;
+            &-Item
+                text-align: center;
+                display: flex;
+                align-items: center;
+                .itemCont
+                    max-width: 150px;
+                    display: flex
+                    align-items: center
+                    flex-direction: column
+                    &-Img
+                        height: 125px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        border-radius: 50%;
+                        background: white;
+                        width: 125px;
+                    p
+                        font-family: "BritishCouncil-black";
+                        color: white;
+.mainConten
+    .normalCont
+        display: flex
+        flex-direction: column
+        .text
+            display: flex
+            align-items: center;
+            position: relative
+            .textCont
+                font-size: 22px
+                width: 50%
+                text-align: left
+                padding 0 1em
+                h3
+                    text-align: center
+                    color: #00a8e1;
+            .parallaxImage
+                width: 50%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                padding: 2em;
+                .images
+                    position: absolute
+                    top 0
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    width: 50%
+                    transition: all .1s ease-in-out
+            .p1
+                img
+                    &:first-child
+                        align-self: flex-end;
+            .p2
+                img
+                    &:last-child
+                        align-self: flex-end;
+.footer
+    margin-top: 7em
+    background: #00a8e1
+    position: relative
+    .pencil
+        position: absolute
+        left: 0
+        bottom: 5em;
+        
+    &-Container
+        padding 0 1em
+        .footer-header
+            position: relative
+            display: flex
+            justify-content: space-between
+            align-items: center
+            .plants
+                position: absolute
+                top -6.4em
+            .title
+                width: 70%
+                h3
+                    margin: 0
+                    color white
+                    padding: 2em 0
+        form
+            .footer-footer
+                padding-top: 2em;
+                position: relative
+            .footer-form
+                display: flex
+                justify-content: space-between;
+                align-items: flex-start
+                flex-wrap: wrap
+                .col
+                    width: 25%
+                    display: flex
+                    flex-direction: column
+                    min-width: 250px
+                    &:nth-child(2)
+                        padding: 0 2em;
+                        border-right: 1px solid white;
+                        border-left: 1px solid white;
+                    &:last-child
+                        align-items: flex-end;
+                        label
+                            text-align: left;
+                            width: 100%;
+                            color: white;
+                    input[type=text]
+                    input[type=email]
+                    input[type=password]
+                    textarea
+                    select
+                        border: 0
+                        font-size: 16px
+                        padding: .5em .8em
+                        margin: .5em 0
+                        width: 100%
+                    label
+                        color: white;
+            .footer-fix
+                display: flex;
+                justify-content space-between !important
+                padding: 1em 0;
+                flex-wrap: wrap
+                p
+                    max-width: 500px
+                    margin-right: 3em
+                    font-size: 14px;
+                    color: white
+                    margin: 0
+                .refix
+                    display: flex
+            .required
+                display: flex;
+                justify-content: flex-start;
+                padding: 1em 0;
+                p
+                    font-size: 14px;
+                    color: white
+                    margin: 0
+.check
+    width: 21px
+    height: 21px
+    position: relative
+    margin-right: 1em;
+    p
+        margin: 0
+        color: white
+    input[type=checkbox]:not(:checked)
+    input[type=checkbox]:checked
+        left: 0;
+        z-index: 1;
+        width: 21px;
+        height: 21px;
+        opacity: 0;
+        position: absolute
+    input[type="checkbox"]:not(:checked) + label
+    input[type="checkbox"]:checked + label
+        position: absolute;
+        cursor: pointer;
+        width: 21px;
+        height: 21px;
+        left: 0;
+    input[type="checkbox"] + label:after 
+        content: '';
+        background-image: url(../img/required-inactive.svg);
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 21px;
+        height: 21px;
+    input[type="checkbox"] + label:before 
+        content: '';
+        position: absolute;
+        background-image: url(../img/icon-required.svg);
+        top: 0;
+        left: 0;
+        width: 21px;
+        height: 21px;
+    input[type="checkbox"]:not(:checked) + label:before
+        opacity: 0;
+    input[type="checkbox"]:checked + label:before
+        opacity: 1;
+    input[type="checkbox"]:not(:checked) + label:after
+        opacity: 1;
+    input[type="checkbox"]:checked + label:after
+        opacity: 1;
+    input[type="checkbox"]:disabled:checked + label:after 
+        color: #999;
+    input[type="checkbox"]:disabled + label
+        color: #aaa;
+.post-footer
+    background: #002856
+    .wrap-principal
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1.5em 0;
+        position: relative;
+        .social
+            width: 50%;
+            display: flex;
+            justify-content: space-between;
+            color: white;
+            flex-wrap: wrap;
+            a
+                display: flex;
+                align-items: center;
+                width: 50%;
+                min-width: 300px
+                justify-content: space-around;
+@media all and (max-width 1218px)
+    .social
+        margin:0
+        -webkit-justify-content center !important;
+        -moz-justify-content center !important;
+        -ms-justify-content center !important;
+        -o-justify-content center !important;
+        justify-content center !important;
+    .footer-fix
+        -webkit-justify-content center !important;
+        -moz-justify-content center !important;
+        -ms-justify-content center !important;
+        -o-justify-content center !important;
+        justify-content center !important;
+@media all and (max-width 850px)
+    .mainConten
+        .normalCont
+            .text
+                flex-direction column
+                .textCont
+                    width 100% !important
+                    h3
+                        font-size 1.5em !important
+                .parallaxImage
+                    padding 0 !important
+                    .images
+                        opacity 0.3
+                        z-index -1
+@media all and (max-width 810px)
+    .footer-form
+        flex-direction column !important;
+        align-items center !important;
+        .col
+            width: 100% !important;
+            padding 0 2em !important
+    .footer-header
+        align-items: center;
+        flex-direction: column-reverse;
+        padding-top: 3em;
+        .title
+            text-align center
+            h3
+                font-size 1.5em
+@media all and (max-width 600px)
+    .post-footer
+        .wrap-principal
+            flex-direction: column;
+            .foo
+                padding 1em 0
